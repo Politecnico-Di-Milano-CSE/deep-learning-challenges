@@ -1,80 +1,42 @@
-# README for Artificial Neural Networks and Deep Learning 2023 - Homework Assignments
+# Deep Learning Challenges
 
-## Overview
-This repository contains the work of "The Avengers" team for Homework 1 and 2 in the Artificial Neural Networks and Deep Learning course, 2023. The assignments focused on Image Classification (Homework 1) and Time Series Forecasting (Homework 2).
+Team solutions to the two challenges of the Artificial Neural Networks and Deep Learning course: binary image classification of plant health, and time series forecasting.
 
----
+| | |
+|---|---|
+| Course | Artificial Neural Networks and Deep Learning |
+| University | Politecnico di Milano, M.Sc. Computer Science and Engineering |
+| Semester | Fall 2023 |
+| Type | Team project ("The Avengers") |
 
-## Homework 1: Image Classification
+## Challenge 1: plant health classification
 
-### Challenge Overview
-Develop a model for binary classification of plant health.
+- **Task:** classify 96x96 RGB images of plants as healthy or unhealthy.
+- **Work:** data cleaning and class balancing, then convolutional models including a basic CNN, ResNet50 and DenseNet, built with TensorFlow and Keras.
+- **Folders:** [`Challenge_1/`](Challenge_1/) holds the dataset, each member's test models, and the submitted notebooks, model and report.
 
-#### Repository Structure
-- `Challenge_1/`
-  - `Data/`: Training dataset of RGB plant images.
-  - `Submission/`: Contains `model.py` and metadata.
-  - `Test_Models/`: Scripts and notebooks for testing models.
-  - `The_Avengers/`: Team's final submission files.
+## Challenge 2: time series forecasting
 
-#### Data Details
-- Image size: 96x96, Color space: RGB, Format: .npz
-- Classes: {0: "healthy", 1: "unhealthy"}
+- **Task:** forecast future values of uncorrelated time series.
+- **Work:** data exploration, then recurrent models (LSTM and GRU), autoregressive models and ensembles.
+- **Folders:** [`Challenge_2/`](Challenge_2/) holds the data reading notebooks, each member's models, and the final submission with its report.
 
-#### Model Development
-- Utilized TensorFlow and Keras for a binary classification model.
-- Model evaluated on accuracy.
+## Repository structure
 
-#### Submission Requirements
-- Final submission emailed to an2dl.competitions@gmail.com.
+| Path | Contents |
+|---|---|
+| [`Challenge_1/Data/`](Challenge_1/Data/) | Plant image dataset and the class balancing script |
+| [`Challenge_1/Test Models/`](Challenge_1/Test%20Models/) | Each team member's experiments |
+| [`Challenge_1/Submission_Files/`](Challenge_1/Submission_Files/) | Notebooks and files submitted for Challenge 1 |
+| [`Challenge_1/The_Avengers_All_Files/`](Challenge_1/The_Avengers_All_Files/) | All Challenge 1 notebooks and the report |
+| [`Challenge_2/Dataset/`](Challenge_2/Dataset/) | Data reading notebook |
+| [`Challenge_2/Team Models/`](Challenge_2/Team%20Models/) | Each team member's forecasting models |
+| [`Challenge_2/Final Submission/`](Challenge_2/Final%20Submission/) | Submitted model and report |
 
-#### Usage
-- Clone the repository and follow instructions in `Test_Models/`.
+## Tech stack
 
-#### Acknowledgments
-- Thanks to course instructors and team members.
+Python, TensorFlow, Keras, Jupyter.
 
----
+## Team
 
-## Homework 2: Time Series Forecasting
-
-### Challenge Overview
-Forecasting future values of uncorrelated time series.
-
-#### Repository Structure
-- `Challenge_2/`
-  - `Dataset/`: Training data for model development.
-  - `Practice Models/`: Preliminary model trials.
-  - `Final Submission/Final Model/`: Definitive models and scripts.
-  - `Team Models/`: Space for collaborative model development.
-
-#### Data Details
-- Training data in `training_data.npy`.
-- Categories in `categories.npy`.
-
-#### Approach
-- Exploration, prototyping with LSTM and GRU, and refinement.
-
-#### Submission Process
-- Final models in `Final Submission/Final Model/`.
-
-#### Replication Instructions
-- Clone the repository and explore `Dataset/` and `Practice Models/`.
-
-#### Submission Requirements
-- Final submission emailed to an2dl.competitions@gmail.com.
-
-#### Acknowledgments
-- Gratitude to course staff and team members.
-
----
-
-## Authors
-- Rishabh Tiwari: [rishtiwari98@gmail.com](mailto:rishtiwari98@gmail.com)
-- Sophie-Claire Antoun: [Sophieclaireantoun@gmail.com](mailto:Sophieclaireantoun@gmail.com)
-- Gustav Malmsten: [gustavmalmsten@gmail.com](mailto:gustavmalmsten@gmail.com)
-- Nicolas Filip Johansson: [nicolas.johansson221@hotmail.com](mailto:nicolas.johansson221@hotmail.com)
-
----
-
-_This README provides a comprehensive overview of the challenges, structure, methodologies, and contributions of "The Avengers" team for the specified homework assignments in the Artificial Neural Networks and Deep Learning course, 2023._
+Rishabh Tiwari, Sophie-Claire Antoun, Gustav and Nico.
